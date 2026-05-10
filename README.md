@@ -1,28 +1,51 @@
 # Sahiru Imadith Portfolio
 
-Dark neon professional portfolio website for Sahiru Imadith.
+Professional portfolio website for Sahiru Imadith Hennadige.
 
-## Files
+## Live site
+
+https://sxhiru0725.github.io/sahiru-portfolio/
+
+## Tech stack
+
+HTML5  
+CSS3  
+JavaScript  
+
+## Included sections
+
+Home  
+Services  
+Projects  
+Skills  
+Experience  
+Education  
+Certificates  
+Contact  
+
+## Project structure
 
 ```text
-index.html
-style.css
-script.js
-assets/
-  Sahiru_Imadith_CV.pdf
-  img/profile.png
+sahiru-portfolio/
+├── index.html
+├── style.css
+├── script.js
+├── README.md
+└── assets/
+    ├── Sahiru_Imadith_CV.pdf
+    ├── icons/
+    │   ├── logo.svg
+    │   └── favicon.svg
+    └── img/
+        ├── profile.png
+        ├── horizon-travels.png
+        └── crazy-cobra.png
 ```
 
-## How to run
-
-Open `index.html` in your browser.
-
-## How to deploy to GitHub Pages
+## Update and publish
 
 ```bash
 git add .
-git commit -m "Update portfolio design"
+git commit -m "Final portfolio update"
 git push
 ```
-
-Then check your GitHub Pages link.

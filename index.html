@@ -4,277 +4,277 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <meta name="description" content="Sahiru Imadith portfolio. Full Stack Developer building practical web applications, APIs, Python tools and software projects." />
-  <meta name="author" content="Sahiru Imadith" />
+  <title>Sahiru Imadith | Full Stack Developer Portfolio</title>
+  <meta name="description" content="Sahiru Imadith Hennadige, Full Stack Developer and Computer Science student building MERN, Flask, Python, IoT and C projects." />
+  <meta name="keywords" content="Sahiru Imadith, Full Stack Developer, MERN Stack, React, Node.js, Python, Flask, MongoDB, MySQL, IoT, C, Portfolio" />
+  <meta name="author" content="Sahiru Imadith Hennadige" />
 
-  <title>Sahiru Imadith | Full Stack Developer</title>
+  <meta property="og:title" content="Sahiru Imadith | Full Stack Developer" />
+  <meta property="og:description" content="A professional portfolio showing full stack, Python, IoT and software development projects." />
+  <meta property="og:type" content="website" />
 
   <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
   <link rel="apple-touch-icon" href="assets/icons/logo.svg" />
-  <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
-
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
 
 <body>
+  <div class="background-grid"></div>
   <div class="background-glow"></div>
 
-  <header class="header">
-    <nav class="nav">
-      <a href="#home" class="logo" aria-label="Home">
-        <img src="assets/icons/logo.svg" alt="Sahiru Imadith logo" />
+  <header class="site-header">
+    <nav class="nav-shell" aria-label="Main navigation">
+      <a href="#home" class="brand" aria-label="Sahiru Imadith home">
+        <img src="assets/icons/logo.svg" alt="" />
       </a>
 
-      <button class="menu-button" id="menuButton" aria-label="Open menu">
+      <button class="menu-button" id="menuButton" aria-label="Open menu" aria-expanded="false">
         <span></span>
         <span></span>
       </button>
 
       <div class="nav-links" id="navLinks">
         <a href="#home" class="active">Home</a>
-        <a href="#about">About</a>
+        <a href="#services">Services</a>
         <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
         <a href="#certificates">Certificates</a>
         <a href="#contact">Contact</a>
       </div>
 
-      <div class="social-links">
-        <a href="https://github.com/sxhiru0725" target="_blank" rel="noopener" aria-label="GitHub">GH</a>
-        <a href="https://www.linkedin.com/in/sxhiru0725/" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
-        <a href="mailto:sahiruimadith200507@gmail.com" aria-label="Email">@</a>
+      <div class="nav-social" aria-label="Profile links">
+        <a href="https://github.com/sxhiru0725" target="_blank" rel="noopener" aria-label="GitHub profile">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .8a11.2 11.2 0 0 0-3.5 21.8c.56.1.76-.24.76-.54v-2.1c-3.1.67-3.76-1.32-3.76-1.32-.5-1.3-1.24-1.64-1.24-1.64-1.02-.7.08-.68.08-.68 1.12.08 1.72 1.16 1.72 1.16 1 .1.4 2.63 3.16 1.88.1-.73.4-1.23.72-1.52-2.48-.28-5.08-1.24-5.08-5.52 0-1.22.44-2.22 1.15-3-.12-.28-.5-1.42.12-2.96 0 0 .94-.3 3.08 1.14A10.7 10.7 0 0 1 12 7.1c.95 0 1.9.13 2.8.38 2.13-1.44 3.07-1.14 3.07-1.14.62 1.54.24 2.68.12 2.96.72.78 1.15 1.78 1.15 3 0 4.3-2.6 5.23-5.1 5.5.42.36.78 1.06.78 2.14v3.12c0 .3.2.65.78.54A11.2 11.2 0 0 0 12 .8Z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/sxhiru0725/" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S.02 4.88.02 3.5 1.13 1 2.5 1s2.48 1.12 2.48 2.5ZM.42 8h4.16v15H.42V8Zm7.38 0h3.98v2.05h.06c.55-1.05 1.9-2.16 3.92-2.16 4.2 0 4.98 2.76 4.98 6.35V23h-4.15v-7.75c0-1.85-.03-4.22-2.57-4.22-2.58 0-2.98 2.01-2.98 4.09V23H7.8V8Z"/></svg>
+        </a>
+        <a href="mailto:sahiruimadith200507@gmail.com" aria-label="Email Sahiru">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 5.5A2.5 2.5 0 0 1 4.5 3h15A2.5 2.5 0 0 1 22 5.5v13a2.5 2.5 0 0 1-2.5 2.5h-15A2.5 2.5 0 0 1 2 18.5v-13Zm2.4-.4 7.6 6.07 7.6-6.07H4.4Zm15.5 2.07-7.28 5.82a1 1 0 0 1-1.24 0L4.1 7.17V18.5c0 .22.18.4.4.4h15a.4.4 0 0 0 .4-.4V7.17Z"/></svg>
+        </a>
       </div>
     </nav>
   </header>
 
   <main>
-    <section class="hero" id="home">
-      <div class="hero-content">
-        <p class="intro-line"><span></span>Hello, I'm</p>
-
+    <section class="hero-section" id="home">
+      <div class="hero-copy">
+        <p class="micro-heading"><span></span>Hello, I’m</p>
         <h1>Sahiru Imadith</h1>
-        <h2>Full Stack Developer</h2>
-
-        <p class="hero-description">
-          Building practical web applications, APIs, and software projects.
+        <p class="role">Full Stack Developer</p>
+        <p class="hero-text">
+          Computer Science student building practical web applications, APIs, Python tools and software projects with clean design and maintainable code.
         </p>
 
         <div class="hero-actions">
-          <a href="#projects" class="button primary-button">
-            View Projects
-            <span>↗</span>
-          </a>
-
-          <a href="assets/Sahiru_Imadith_CV.pdf" target="_blank" rel="noopener" class="button secondary-button">
-            Download CV
-            <span>↓</span>
-          </a>
+          <a class="btn btn-primary" href="#projects">View Projects <span>↗</span></a>
+          <a class="btn btn-outline" href="assets/Sahiru_Imadith_CV.pdf" target="_blank" rel="noopener">Download CV <span>↓</span></a>
         </div>
 
-        <div class="hero-social-buttons" aria-label="Social profile links">
-          <a href="https://github.com/sxhiru0725" target="_blank" rel="noopener">
-            <span>GH</span>
-            GitHub
-          </a>
-
-          <a href="https://www.linkedin.com/in/sxhiru0725/" target="_blank" rel="noopener">
-            <span>in</span>
-            LinkedIn
-          </a>
-
-          <a href="mailto:sahiruimadith200507@gmail.com">
-            <span>@</span>
-            Gmail
-          </a>
+        <div class="hero-social-buttons">
+          <a href="https://github.com/sxhiru0725" target="_blank" rel="noopener"><span>GH</span> GitHub</a>
+          <a href="https://www.linkedin.com/in/sxhiru0725/" target="_blank" rel="noopener"><span>in</span> LinkedIn</a>
+          <a href="mailto:sahiruimadith200507@gmail.com"><span>@</span> Gmail</a>
         </div>
 
-        <div class="stats">
-          <article class="stat-card">
-            <div class="stat-icon">◎</div>
-            <div>
-              <strong>10+</strong>
-              <p>Web Apps</p>
-            </div>
-          </article>
-
-          <article class="stat-card">
-            <div class="stat-icon">&lt;/&gt;</div>
-            <div>
-              <strong>6+</strong>
-              <p>Projects</p>
-            </div>
-          </article>
-
-          <article class="stat-card">
-            <div class="stat-icon">⌂</div>
-            <div>
-              <strong>2027</strong>
-              <p>BSc Expected</p>
-            </div>
-          </article>
+        <div class="hero-stats" aria-label="Portfolio highlights">
+          <article><strong>10+</strong><span>Web apps delivered</span></article>
+          <article><strong>12</strong><span>GitHub repositories</span></article>
+          <article><strong>2027</strong><span>BSc expected</span></article>
         </div>
       </div>
 
-      <div class="hero-image-wrap">
-        <img src="assets/img/profile.png" alt="Sahiru Imadith profile portrait" class="hero-image" />
+      <div class="hero-visual">
+        <div class="image-frame">
+          <img src="assets/img/profile.png" alt="Professional portrait of Sahiru Imadith" />
+        </div>
       </div>
     </section>
 
-    <section class="dashboard-grid" id="about">
-      <article class="panel services-panel">
-        <div class="panel-title">Services</div>
-
-        <div class="service-grid">
-          <div class="mini-card">
-            <div class="mini-icon">◎</div>
-            <h3>Web Development</h3>
-            <p>Responsive websites and web apps using modern frontend tools.</p>
-          </div>
-
-          <div class="mini-card highlighted">
-            <div class="mini-icon">▤</div>
-            <h3>Backend Systems</h3>
-            <p>Scalable APIs, authentication and database driven systems.</p>
-          </div>
-
-          <div class="mini-card">
-            <div class="mini-icon">⌘</div>
-            <h3>Python Tools</h3>
-            <p>Desktop apps, automation tools and useful software utilities.</p>
-          </div>
+    <section class="glass-grid" aria-label="Portfolio summary">
+      <section class="panel services-panel" id="services">
+        <div class="section-kicker">Services</div>
+        <div class="service-cards">
+          <article class="small-card">
+            <span class="card-icon">◎</span>
+            <h2>Web Development</h2>
+            <p>Responsive websites and full stack web apps with clean UI, reusable components and accessible layouts.</p>
+          </article>
+          <article class="small-card featured">
+            <span class="card-icon">▤</span>
+            <h2>Backend Systems</h2>
+            <p>REST APIs, authentication, protected routes, middleware, database schemas and secure CRUD workflows.</p>
+          </article>
+          <article class="small-card">
+            <span class="card-icon">⌘</span>
+            <h2>Python Tools</h2>
+            <p>Flask apps, desktop utilities, SQLite tools, automation ideas and practical software for real problems.</p>
+          </article>
         </div>
-      </article>
+      </section>
 
-      <article class="panel projects-panel" id="projects">
-        <div class="panel-title">Featured Projects</div>
+      <section class="panel projects-panel" id="projects">
+        <div class="section-kicker">Featured Projects</div>
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-art art-build"></div>
+            <div class="project-body">
+              <p>Full Stack Study Platform</p>
+              <h2>Build</h2>
+              <span>React · TypeScript · Node.js · MongoDB</span>
+              <a href="https://github.com/sxhiru0725/Build" target="_blank" rel="noopener">Open GitHub ↗</a>
+            </div>
+          </article>
 
-        <div class="project-row">
-          <a href="https://github.com/sxhiru0725/Build" target="_blank" rel="noopener" class="project-card">
-            <div class="project-thumb thumb-one"></div>
-            <h3>Build</h3>
-            <p>Online study rooms with tasks, timers, analytics and admin tools.</p>
-            <span>TypeScript</span>
-          </a>
+          <article class="project-card">
+            <div class="project-art art-saved"></div>
+            <div class="project-body">
+              <p>Photography Portfolio Platform</p>
+              <h2>Saved</h2>
+              <span>MERN · JWT · Uploads · Protected Routes</span>
+              <a href="https://github.com/sxhiru0725/Saved" target="_blank" rel="noopener">Open GitHub ↗</a>
+            </div>
+          </article>
 
-          <a href="https://github.com/sxhiru0725/Saved" target="_blank" rel="noopener" class="project-card">
-            <div class="project-thumb thumb-two"></div>
-            <h3>Saved</h3>
-            <p>Photography portfolio platform with authentication and uploads.</p>
-            <span>MERN Stack</span>
-          </a>
+          <article class="project-card">
+            <div class="project-art art-publish"></div>
+            <div class="project-body">
+              <p>Business Report Generator</p>
+              <h2>PublishMe</h2>
+              <span>Python · Flask · SQL · PDF Export</span>
+              <a href="https://github.com/sxhiru0725/PublishMe" target="_blank" rel="noopener">Open GitHub ↗</a>
+            </div>
+          </article>
 
-          <a href="https://github.com/sxhiru0725/PublishMe" target="_blank" rel="noopener" class="project-card">
-            <div class="project-thumb thumb-three"></div>
-            <h3>PublishMe</h3>
-            <p>Business report generator with dashboard and PDF export.</p>
-            <span>Flask</span>
-          </a>
+          <article class="project-card">
+            <div class="project-art art-expiry"></div>
+            <div class="project-body">
+              <p>Retail Expiry Management</p>
+              <h2>ExpiryGuard</h2>
+              <span>Python · SQLite · Desktop App</span>
+              <a href="https://github.com/sxhiru0725/ExpiryGuard" target="_blank" rel="noopener">Open GitHub ↗</a>
+            </div>
+          </article>
 
-          <a href="https://github.com/sxhiru0725/ExpiryGuard" target="_blank" rel="noopener" class="project-card">
-            <div class="project-thumb thumb-four"></div>
-            <h3>ExpiryGuard</h3>
-            <p>Stock expiry desktop app for small retail businesses.</p>
-            <span>Python</span>
-          </a>
+          <article class="project-card optional-project">
+            <div class="project-art art-horizon"></div>
+            <div class="project-body">
+              <p>Flight Booking Web App</p>
+              <h2>Horizon Travels</h2>
+              <span>Flask · MySQL · HTML · CSS · JavaScript</span>
+              <a href="https://github.com/sxhiru0725/horizon-travels" target="_blank" rel="noopener">Open GitHub ↗</a>
+            </div>
+          </article>
+
+          <article class="project-card optional-project">
+            <div class="project-art art-cobra"></div>
+            <div class="project-body">
+              <p>C Game Development</p>
+              <h2>Crazy Cobra</h2>
+              <span>C · Raylib · Game Loop · Collision</span>
+              <a href="https://github.com/sxhiru0725/crazy-cobra-raylib" target="_blank" rel="noopener">Open GitHub ↗</a>
+            </div>
+          </article>
         </div>
-      </article>
+      </section>
 
-      <article class="panel skills-panel">
-        <div class="panel-title">Skills</div>
-
+      <aside class="panel skills-panel" id="skills">
+        <div class="section-kicker">Skills</div>
         <div class="skill-list">
           <span>React</span>
           <span>Node.js</span>
+          <span>Express.js</span>
           <span>Python</span>
+          <span>Flask</span>
           <span>MongoDB</span>
           <span>MySQL</span>
+          <span>SQLite</span>
           <span>TypeScript</span>
-          <span>Flask</span>
           <span>GitHub</span>
+          <span>C / C++</span>
+          <span>Arduino</span>
         </div>
+        <a class="wide-link" href="#contact">Contact Me ↗</a>
+      </aside>
+    </section>
 
-        <a href="#contact" class="more-skills">Contact Me ↗</a>
+    <section class="two-column-section" id="experience">
+      <article class="panel">
+        <div class="section-kicker">Experience</div>
+        <h2>Freelance Full Stack Developer</h2>
+        <p>
+          Delivered production-ready web applications using React, Node.js, Express, MongoDB and MySQL, covering requirements, design, implementation, testing and handover.
+        </p>
+      </article>
+
+      <article class="panel">
+        <div class="section-kicker">Education</div>
+        <h2>BSc Honours Computer Science</h2>
+        <p>
+          University of the West of England, Bristol. Studying software engineering, algorithms and data structures, system architecture, databases and web technologies.
+        </p>
       </article>
     </section>
 
-    <section class="experience-strip">
-      <div>
-        <p class="panel-title">Experience</p>
-        <h2>Freelance Full Stack Developer</h2>
-        <p>
-          Delivered web applications using React, Node.js, Express, MongoDB and MySQL, covering requirements, design, development, testing and handover.
-        </p>
-      </div>
-
-      <div>
-        <p class="panel-title">Education</p>
-        <h2>BSc Computer Science</h2>
-        <p>
-          University of the West of England, Bristol. Studying software engineering, algorithms, system architecture, databases and web technologies.
-        </p>
-      </div>
-    </section>
-
-
-    <section class="certificates-section" id="certificates">
-      <div class="panel-title">Certificates</div>
-
+    <section class="certificates-section panel" id="certificates">
+      <div class="section-kicker">Certificates</div>
       <div class="certificate-grid">
         <article class="certificate-card">
           <span>May 2026</span>
-          <h3>Certification of Introduction to Cybersecurity</h3>
-          <p>Cisco Networking Academy. Skills include cybersecurity, cyber defense and security fundamentals.</p>
+          <h2>Introduction to Cybersecurity</h2>
+          <p>Cisco Networking Academy. Cybersecurity, cyber defense and security fundamentals.</p>
         </article>
 
         <article class="certificate-card">
           <span>May 2026</span>
-          <h3>Certified in Project Management</h3>
-          <p>SLASSCOM Professional Skills Program. Focused on managing a project and practical project delivery.</p>
+          <h2>Certified in Project Management</h2>
+          <p>SLASSCOM Professional Skills Program. Managing a project and practical delivery.</p>
         </article>
 
         <article class="certificate-card">
           <span>May 2026</span>
-          <h3>Certified in Client Solutions</h3>
-          <p>SLASSCOM Professional Skills Program. Focused on compelling client solutions and management skills.</p>
+          <h2>Certified in Client Solutions</h2>
+          <p>SLASSCOM Professional Skills Program. Compelling client solutions and management.</p>
         </article>
 
         <article class="certificate-card">
           <span>May 2026</span>
-          <h3>Certified in Problem Solving</h3>
-          <p>SLASSCOM Professional Skills Program. Focused on hypothesis based problem solving and analytical thinking.</p>
+          <h2>Certified in Problem Solving</h2>
+          <p>SLASSCOM Professional Skills Program. Hypothesis-based problem solving.</p>
         </article>
 
         <article class="certificate-card">
           <span>May 2026</span>
-          <h3>Certified in Leadership</h3>
-          <p>SLASSCOM Professional Skills Program. Focused on leadership skills, communication and professional growth.</p>
+          <h2>Certified in Leadership</h2>
+          <p>SLASSCOM Professional Skills Program. Leadership, communication and growth.</p>
         </article>
       </div>
     </section>
 
-    <section class="contact-bar" id="contact">
-      <div class="contact-logo">
-        <img src="assets/icons/logo.svg" alt="Sahiru Imadith logo" />
+    <section class="contact-strip" id="contact">
+      <img src="assets/icons/logo.svg" alt="" />
+      <div>
+        <h2>Let’s build something useful together.</h2>
+        <p>Open to junior developer roles, internships and practical software opportunities.</p>
       </div>
 
-      <h2>Let's build something useful together.</h2>
-
-      <div class="contact-links">
+      <div class="contact-buttons">
+        <a href="mailto:sahiruimadith200507@gmail.com">Gmail</a>
         <a href="https://github.com/sxhiru0725" target="_blank" rel="noopener">GitHub</a>
         <a href="https://www.linkedin.com/in/sxhiru0725/" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="mailto:sahiruimadith200507@gmail.com">Gmail</a>
       </div>
 
-      <p>Bristol, United Kingdom</p>
-
-      <a href="#home" class="back-top">↑</a>
+      <a href="#home" class="back-top" aria-label="Back to top">↑</a>
     </section>
   </main>
 
-  <footer class="footer">
-    <p>© <span id="year"></span> Sahiru Imadith. All rights reserved.</p>
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Sahiru Imadith Hennadige. All rights reserved.</p>
   </footer>
 </body>
 </html>
