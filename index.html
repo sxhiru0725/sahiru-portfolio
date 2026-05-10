@@ -1,267 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta property="og:url" content="https://sxhiru0725.github.io" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Favicon / Logo -->
-  <link rel="icon" type="image/png" href="assets/icons/logo.png">
-  <link rel="icon" href="assets/icons/favicon.ico" />
+  <meta name="description" content="Sahiru Imadith portfolio. Full Stack Developer building practical web applications, APIs, Python tools and software projects." />
+  <meta name="author" content="Sahiru Imadith" />
 
-  <title>Sahiru Imadith — Computer Science Student</title>
-  <meta name="description" content="Portfolio of Sahiru Imadith — 2nd-Year BSc (Hons) Computer Science student at UWE Bristol. Projects include web apps, Arduino builds, Python tools, and C/raylib games." />
-  <meta property="og:title" content="Sahiru Imadith — Computer Science Student" />
-  <meta property="og:description" content="Horizon Travels · Arduino · Python · C/raylib · Blender3D" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://sxhiru0725.github.io" />
-  <meta property="og:image" content="assets/img/preview.png" />
+  <title>Sahiru Imadith | Full Stack Developer</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
 </head>
-<body>
-  <a class="skip-link" href="#main">Skip to content</a>
 
-  <header>
-    <div class="container nav">
-      <div class="brand" aria-label="Brand" style="display:flex;align-items:center;gap:10px;">
-        <img src="assets/icons/logo.png" alt="Logo" style="height: 40px; width: auto; border-radius: 8px;" />
-        <a href="#" aria-label="Home" style="font-weight: 800;">Sahiru Imadith</a>
+<body>
+  <div class="background-glow"></div>
+
+  <header class="header">
+    <nav class="nav">
+      <a href="#home" class="logo" aria-label="Home">
+        <span>S</span>
+      </a>
+
+      <button class="menu-button" id="menuButton" aria-label="Open menu">
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
       </div>
 
-      <input type="checkbox" id="menu-toggle" aria-label="Toggle navigation" />
-      <label for="menu-toggle" class="hamburger" aria-hidden="true">
-        <span></span><span></span><span></span>
-      </label>
-
-      <nav class="nav-links" aria-label="Primary">
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#about">About</a>
-        <a href="#contact" class="btn contact">Contact</a>
-      </nav>
-    </div>
+      <div class="social-links">
+        <a href="https://github.com/sxhiru0725" target="_blank" rel="noopener" aria-label="GitHub">GH</a>
+        <a href="https://www.linkedin.com/in/sxhiru0725/" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+        <a href="mailto:sahiruimadith200507@gmail.com" aria-label="Email">@</a>
+      </div>
+    </nav>
   </header>
 
-  <main id="main">
-    <!-- HERO -->
+  <main>
     <section class="hero" id="home">
-      <div class="container hero-wrap">
-        <div>
-          <span class="eyebrow">2nd-Year BSc (Hons) Computer Science Student · UWE Bristol</span>
-          <h1>Hi, I’m Sahiru — I design and build modern, responsive web experiences.</h1>
-          <p class="lede">Computer Science undergraduate with a strong foundation in programming, web development, and system architecture. I enjoy solving problems and turning ideas into usable products using HTML, CSS, JavaScript, Python and C.</p>
-          <div style="margin:14px 0 18px;">
-            <span class="chip">HTML · CSS · JavaScript</span>
-            <span class="chip">Python · C/C++</span>
-            <span class="chip">Flask · MySQL</span>
-            <span class="chip">Arduino</span>
-          </div>
-          <div>
-            <a class="btn" href="#projects">View Projects</a>
-            <a class="btn outline" href="#contact">Get in Touch</a>
-          </div>
+      <div class="hero-content">
+        <p class="intro-line"><span></span>Hello, I'm</p>
+
+        <h1>Sahiru Imadith</h1>
+        <h2>Full Stack Developer</h2>
+
+        <p class="hero-description">
+          Building practical web applications, APIs, and software projects.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="button primary-button">
+            View Projects
+            <span>↗</span>
+          </a>
+
+          <a href="assets/Sahiru_Imadith_CV.pdf" target="_blank" rel="noopener" class="button secondary-button">
+            Download CV
+            <span>↓</span>
+          </a>
         </div>
-        <div class="hero-portrait">
-          <img class="portrait" src="assets/img/portrait-placeholder.jpg" alt="Portrait of Sahiru" />
+
+        <div class="stats">
+          <article class="stat-card">
+            <div class="stat-icon">◎</div>
+            <div>
+              <strong>10+</strong>
+              <p>Web Apps</p>
+            </div>
+          </article>
+
+          <article class="stat-card">
+            <div class="stat-icon">&lt;/&gt;</div>
+            <div>
+              <strong>6+</strong>
+              <p>Projects</p>
+            </div>
+          </article>
+
+          <article class="stat-card">
+            <div class="stat-icon">⌂</div>
+            <div>
+              <strong>2027</strong>
+              <p>BSc Expected</p>
+            </div>
+          </article>
         </div>
+      </div>
+
+      <div class="hero-image-wrap">
+        <img src="assets/img/profile.png" alt="Sahiru Imadith profile portrait" class="hero-image" />
       </div>
     </section>
 
-    <!-- PROJECTS -->
-    <section id="projects">
-      <div class="container">
-        <div class="section-head">
-          <span class="eyebrow">Work</span>
-          <h2>Selected Projects</h2>
-          <p>A mix of front-end, programming, and embedded systems. Each card links to the code.</p>
-        </div>
+    <section class="dashboard-grid" id="about">
+      <article class="panel services-panel">
+        <div class="panel-title">Services</div>
 
-        <div class="grid cols-2">
-          <!-- Horizon Travels -->
-          <article class="card">
-            <div class="card-media">
-              <img src="assets/img/horizon-travels.png" alt="Horizon Travels project screenshot" style="width: 100%; height: 100%; object-fit: cover;">
-            </div>
-            <div class="card-body">
-              <p class="stack">Flask · MySQL · HTML · CSS · JavaScript</p>
-              <h3>Horizon Travels — Flight Booking Web App</h3>
-              <ul>
-                <li>Database-driven routes, fares, and schedules with full booking flow.</li>
-                <li>Auth, admin reports, and CRUD for journeys/fares.</li>
-                <li>Responsive UI using a serene teal/blue palette.</li>
-              </ul>
-            </div>
-            <div class="card-actions">
-              <a class="btn outline" href="https://github.com/sxhiru0725/horizon-travels" target="_blank" rel="noreferrer">GitHub</a>
-            </div>
-          </article>
-
-          <!-- Anti-Dengue Awareness -->
-          <article class="card">
-            <div class="card-media">
-              <img src="assets/img/dengue-awareness.png" alt="Anti-Dengue Awareness App screenshot" style="width:100%; height:100%; object-fit:cover; border-radius:8px;">
-            </div>
-            <div class="card-body">
-              <p class="stack">Blender3D · Python · Java · HTML · CSS</p>
-              <h3>Anti-Dengue Awareness 3D Animation — National Competition Entry</h3>
-              <ul>
-                <li>Built an educational app to prevent dengue fever; designed UI and tested flows.</li>
-                <li>Combined scripting, 3D assets, and basic web tech to present content.</li>
-                <li>Secured participation at national level (Sri Lanka).</li>
-              </ul>
-            </div>
-            <div class="card-actions"></div>
-          </article>
-
-          <!-- Arduino collection -->
-          <article class="card">
-            <div class="card-media">
-              <img src="assets/img/arduino.jpg" alt="Arduino project setup" style="width:100%; height:100%; object-fit:cover; border-radius:8px;">
-            </div>
-            <div class="card-body">
-              <p class="stack">Arduino · C/C++ · Sensors</p>
-              <h3>Arduino Builds — Sensors & Control Systems</h3>
-              <ul>
-                <li><strong>Joystick-Controlled Fan:</strong> microcontroller logic + hardware integration.</li>
-                <li><strong>Ultrasonic Distance + LCD:</strong> real-time measurement on 16x2 LCD.</li>
-                <li><strong>RC Car:</strong> motor drivers + remote input + sensor integration.</li>
-              </ul>
-            </div>
-            <div class="card-actions">
-              <a class="btn outline" href="https://github.com/sxhiru0725/arduino-distance-lcd-joystick-comm" target="_blank" rel="noreferrer">GitHub</a>
-            </div>
-          </article>
-
-          <!-- C / raylib game -->
-          <article class="card">
-            <div class="card-media">
-              <img src="assets/img/crazy-cobra.png" alt="Crazy Cobra (C + raylib) screenshot" style="width:100%; height:100%; object-fit:cover; border-radius:8px;">
-            </div>
-            <div class="card-body">
-              <p class="stack">C · raylib</p>
-              <h3>Crazy Cobra — Snake-Style Game</h3>
-              <ul>
-                <li>Start screen, pause/resume, health system, score counter, and speed scaling.</li>
-                <li>Built with raylib in C; simple assets and responsive game loop.</li>
-              </ul>
-            </div>
-            <div class="card-actions">
-              <a class="btn outline" href="https://github.com/sxhiru0725/crazy-cobra-raylib" target="_blank" rel="noreferrer">GitHub</a>
-            </div>
-          </article>
-
-          <!-- Tic-Tac-Toe (C console) -->
-          <article class="card">
-            <div class="card-media">
-              <img src="assets/img/tic-tac-toe.png" alt="Tic-Tac-Toe C console project screenshot"
-              style="width:100%; height:100%; object-fit:cover; border-radius:8px;">
-            </div>
-            <div class="card-body">
-              <p class="stack">C</p>
-              <h3>Tic-Tac-Toe (Console)</h3>
-              <ul>
-                <li>Console-based Tic-Tac-Toe game with turn-based logic and clean UI rendering.</li>
-                <li>Handles input validation, win/draw checks, and alternating players dynamically.</li>
-              </ul>
-            </div>
-            <div class="card-actions">
-              <a class="btn outline" href="https://github.com/sxhiru0725/tic-tac-toe" target="_blank" rel="noreferrer">GitHub</a>
-            </div>
-          </article>
-
-          <!-- Python AI / algorithms -->
-          <article class="card">
-            <div class="card-media" aria-label="AI problem solving placeholder">Python · Algorithms</div>
-            <div class="card-body">
-              <p class="stack">Python · Algorithms</p>
-              <h3>AI Problem-Solving Mini-Projects</h3>
-              <ul>
-                <li>Applied search/logic techniques to improve decision-making tasks.</li>
-                <li>Explored basic machine learning approaches and evaluation.</li>
-              </ul>
-            </div>
-            <div class="card-actions">
-              <a class="btn outline" href="#" target="_blank" rel="noreferrer">GitHub</a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- SKILLS -->
-    <section id="skills">
-      <div class="container">
-        <div class="section-head">
-          <span class="eyebrow">Capabilities</span>
-          <h2>Skills</h2>
-          <p>Core front-end, programming, and tooling I use regularly.</p>
-        </div>
-        <div class="skills">
-          <span class="pill">HTML5</span>
-          <span class="pill">CSS3</span>
-          <span class="pill">JavaScript</span>
-          <span class="pill">Python</span>
-          <span class="pill">C</span>
-          <span class="pill">C++</span>
-          <span class="pill">Java</span>
-          <span class="pill">SQL / MySQL</span>
-          <span class="pill">Flask</span>
-          <span class="pill">Arduino</span>
-          <span class="pill">Blender 3D</span>
-          <span class="pill">Git/GitHub</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about">
-      <div class="container">
-        <div class="section-head">
-          <span class="eyebrow">About</span>
-          <h2>About Me</h2>
-          <p>I’m a second-year Computer Science student who enjoys building fast, accessible interfaces and experimenting with embedded systems. I’m adaptable, collaborative, and always keen to learn.</p>
-        </div>
-        <div class="grid cols-2">
-          <div class="card" style="padding:16px;">
-            <h3 style="margin-top:0;">Education</h3>
-            <p><strong>UWE Bristol</strong> — BSc (Hons) Computer Science (2024–2027, expected).</p>
-            <p><strong>NCHS Colombo</strong> — Swinburne Foundation of Science & Engineering Technology (2023): 3 High Distinctions, 5 Distinctions, 1 Pass.</p>
-            <p><strong>Shariputhra College</strong> — GCE O/L (2015–2022): 1A, 3C, 5S.</p>
+        <div class="service-grid">
+          <div class="mini-card">
+            <div class="mini-icon">◎</div>
+            <h3>Web Development</h3>
+            <p>Responsive websites and web apps using modern frontend tools.</p>
           </div>
-          <div class="card" style="padding:16px;">
-            <h3 style="margin-top:0;">Strengths</h3>
-            <p>Critical thinking, adaptability, teamwork, time management, attention to detail, eagerness to learn, research & report writing, effective communication.</p>
+
+          <div class="mini-card highlighted">
+            <div class="mini-icon">▤</div>
+            <h3>Backend Systems</h3>
+            <p>Scalable APIs, authentication and database driven systems.</p>
+          </div>
+
+          <div class="mini-card">
+            <div class="mini-icon">⌘</div>
+            <h3>Python Tools</h3>
+            <p>Desktop apps, automation tools and useful software utilities.</p>
           </div>
         </div>
+      </article>
+
+      <article class="panel projects-panel" id="projects">
+        <div class="panel-title">Featured Projects</div>
+
+        <div class="project-row">
+          <a href="https://github.com/sxhiru0725/Build" target="_blank" rel="noopener" class="project-card">
+            <div class="project-thumb thumb-one"></div>
+            <h3>Build</h3>
+            <p>Online study rooms with tasks, timers, analytics and admin tools.</p>
+            <span>TypeScript</span>
+          </a>
+
+          <a href="https://github.com/sxhiru0725/Saved" target="_blank" rel="noopener" class="project-card">
+            <div class="project-thumb thumb-two"></div>
+            <h3>Saved</h3>
+            <p>Photography portfolio platform with authentication and uploads.</p>
+            <span>MERN Stack</span>
+          </a>
+
+          <a href="https://github.com/sxhiru0725/PublishMe" target="_blank" rel="noopener" class="project-card">
+            <div class="project-thumb thumb-three"></div>
+            <h3>PublishMe</h3>
+            <p>Business report generator with dashboard and PDF export.</p>
+            <span>Flask</span>
+          </a>
+
+          <a href="https://github.com/sxhiru0725/ExpiryGuard" target="_blank" rel="noopener" class="project-card">
+            <div class="project-thumb thumb-four"></div>
+            <h3>ExpiryGuard</h3>
+            <p>Stock expiry desktop app for small retail businesses.</p>
+            <span>Python</span>
+          </a>
+        </div>
+      </article>
+
+      <article class="panel skills-panel">
+        <div class="panel-title">Skills</div>
+
+        <div class="skill-list">
+          <span>React</span>
+          <span>Node.js</span>
+          <span>Python</span>
+          <span>MongoDB</span>
+          <span>MySQL</span>
+          <span>TypeScript</span>
+          <span>Flask</span>
+          <span>GitHub</span>
+        </div>
+
+        <a href="#contact" class="more-skills">Contact Me ↗</a>
+      </article>
+    </section>
+
+    <section class="experience-strip">
+      <div>
+        <p class="panel-title">Experience</p>
+        <h2>Freelance Full Stack Developer</h2>
+        <p>
+          Delivered web applications using React, Node.js, Express, MongoDB and MySQL, covering requirements, design, development, testing and handover.
+        </p>
+      </div>
+
+      <div>
+        <p class="panel-title">Education</p>
+        <h2>BSc Computer Science</h2>
+        <p>
+          University of the West of England, Bristol. Studying software engineering, algorithms, system architecture, databases and web technologies.
+        </p>
       </div>
     </section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="contact">
-      <div class="container">
-        <div class="section-head">
-          <span class="eyebrow">Contact</span>
-          <h2>Let’s talk</h2>
-          <p>Reach me via email or connect on LinkedIn. I’m open to internships, collaborations, and opportunities to grow as a developer.</p>
-        </div>
-        <p>Email: <a href="mailto:sahiruimadith200507@gmail.com">sahiruimadith200507@gmail.com</a></p>
-        <p>Phone: <a href="tel:+447404127434">+44 7404 127 434</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/sahiru-imadith-410845377/" target="_blank" rel="noreferrer">linkedin.com/in/sahiru-imadith-410845377/</a></p>
-        <p>GitHub: <a href="https://github.com/sxhiru0725" target="_blank" rel="noreferrer">github.com/sxhiru0725</a></p>
-      </div>
+    <section class="contact-bar" id="contact">
+      <div class="contact-logo">S</div>
+
+      <h2>Let's build something useful together.</h2>
+
+      <a href="mailto:sahiruimadith200507@gmail.com">sahiruimadith200507@gmail.com</a>
+
+      <p>Bristol, United Kingdom</p>
+
+      <a href="#home" class="back-top">↑</a>
     </section>
   </main>
 
-  <footer>
-    <div class="container">
-      <small>© <span id="year"></span> Sahiru Imadith. Built with clean HTML & CSS. Deployed on GitHub Pages.</small>
-    </div>
+  <footer class="footer">
+    <p>© <span id="year"></span> Sahiru Imadith. All rights reserved.</p>
   </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
